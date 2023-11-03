@@ -1,4 +1,4 @@
 
-Paper.pdf:  Paper.tex 
-	pdflatex Paper.tex
+Theory.pdf:  Theory.tex 
+	pdflatex Theory.tex
 
