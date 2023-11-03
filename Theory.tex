@@ -11,5 +11,35 @@
 
 \maketitle
 
+\section{Introduction}
+
+The classical linear regression model assumes not only that $E(|X)$ is
+linear (in a set of coefficients), but also that $Var(Y|X)$ is constant,
+and $Y|X$ has a normal distribution.  How important are these
+assumptions, in light of the fact that no assumption is satisfied
+exactly in the real world??
+
+\begin{itemize}
+
+\item The linearity assumption is key, of course.  Things are not bad if
+the relation is approximately linear, but what if the linear model is
+substantially off yet still good enough for prediction?  Then our linear
+model will estimate the best linear approximation to $E(Y|X)$.  What can
+be done with this?
+
+\item The lack of constant variance means, among other things, that the
+reported standard errors for the estimated coefficients will be
+incorrect.  One solution is the so-called \textit{sandwich estimator},
+but here we will take another approach.
+
+\item Few if any situations in practice will have error distributions
+close to the normal family, especially in the tails.  But the Central
+Limit Theorem makes this a moot point anyway.
+
+\end{itemize} 
+
+Here we will assume that linearity holds, and our data points are
+independent, but not assume constant variance or normal errors.  We will
+present a simple asymptotic analysis for valid statistical inference.
 
 \end{document}
